@@ -30,7 +30,7 @@ public class MouseToy : MonoBehaviour
         {
             _sr.enabled = false;
             Explode();
-            StartCoroutine(SlowTime());
+        //    StartCoroutine(SlowTime());
         }
     }
     [Button]
@@ -46,6 +46,7 @@ public class MouseToy : MonoBehaviour
                 Gibs[i].GetComponent<Rigidbody2D>().AddForceAtPosition(Gibs[i].transform.position - transform.position*15f, transform.position);
             }
         }
+        GameManager.Instance.SpawnText(transform.position);
     }
     IEnumerator SlowTime()
     {

@@ -649,7 +649,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0.52954787, g: 0.6415094, b: 0.6415094, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -887,6 +887,11 @@ MonoBehaviour:
   - {fileID: 647853036}
   - {fileID: 2111327540}
   - {fileID: 358981254}
+  SpeechBubbles:
+  - {fileID: 6093771968179568889, guid: 8a45e69fa456f4f47ac18775d1cd045d, type: 3}
+  - {fileID: 6174522863312819001, guid: d4d5d37f67423194f95fdca4ae7d4c10, type: 3}
+  - {fileID: 8535078531537397220, guid: de818d1e13eaa1548a9f05a840e8e0de, type: 3}
+  - {fileID: 8149307850413168647, guid: 6a5af5afa0854ed4691d2b83933e2ada, type: 3}
 --- !u!1 &749357572
 GameObject:
   m_ObjectHideFlags: 0

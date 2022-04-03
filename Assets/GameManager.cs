@@ -10,7 +10,7 @@ public class GameManager : MonoBehaviour
     public Transform[] HandSpawnPoints;
     //public Transform[] MouseSpawnPoints;
 
-
+    public GameObject[] SpeechBubbles;
     public static GameManager Instance;
 
 
@@ -71,5 +71,17 @@ public class GameManager : MonoBehaviour
     {
         int rand = Random.Range(0, 101);
         return rand < chance;
+    }
+    public void SpawnText(Vector3 pos)
+    {
+        float angle = -50f;
+        Vector3 randAngle = Vector3.zero;
+        if(PercentChance(50))
+        {
+            randAngle.z = angle;
+        }
+        GameObject textClone = Instantiate(SpeechBubbles[Random.Range(0, SpeechBubbles.Length)], pos, Quaternion.identity);
+        textClone.transform.rotation = Quaternion.Euler(randAngle);
+        Destroy(textClone, 0.5f);
     }
 }

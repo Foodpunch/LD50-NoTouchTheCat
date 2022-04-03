@@ -77,6 +77,7 @@ public class HumanHand : MonoBehaviour
                 handSr.sprite = scratchedHand;
                 DisableFingers();
                 _col.enabled = false;
+                GameManager.Instance.SpawnText(collision.GetContact(0).collider.transform.position);
             }
         }
 
