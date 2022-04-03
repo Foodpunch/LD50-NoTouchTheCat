@@ -1,52 +1,70 @@
 fileFormatVersion: 2
-guid: 58502e0ce377d8343b68627c0110e1db
+guid: e94926d2aefa725408360102e7f24e54
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6865344981023876
-    second: Hand
+      213: 7740277705340735440
+    second: Injured hand
   - first:
-      213: 785981037192582743
-    second: Blank face
+      213: -5028572315297604224
+    second: Normal hand
   - first:
-      213: -6376179176259704686
-    second: Eye_socket
+      213: -8235695039456416448
+    second: forearm
   - first:
-      213: 5942698036100150348
-    second: nugget_3
+      213: 7388583134612361385
+    second: lilfinger
   - first:
-      213: -4064198544163004632
-    second: Eye_ball
+      213: -5762955196615873089
+    second: ring finger
   - first:
-      213: 5907743952863363731
-    second: Tail_0
+      213: -2643911629885963282
+    second: middlefinger
   - first:
-      213: -4342924490234108038
-    second: Tail_1
+      213: -631239432477771643
+    second: indexfinger
   - first:
-      213: -4184007435656100927
-    second: Slice_0
+      213: -3960954192094337165
+    second: Obstacle sheet_7
   - first:
-      213: -7153608762186082483
-    second: Slice_1
+      213: -7042235787407102984
+    second: mitts
   - first:
-      213: 6457447386838019108
-    second: butt
+      213: -1634958758301798745
+    second: Obstacle sheet_9
   - first:
-      213: -4794247543892575371
-    second: Tail_2
+      213: -1921816503397296668
+    second: Obstacle sheet_10
   - first:
-      213: -1605588238761744411
-    second: Slice_2
+      213: 6106073014660796243
+    second: thumb
   - first:
-      213: -2598111437224653618
-    second: tAIL_3
+      213: -8477885209719914861
+    second: fishfull
   - first:
-      213: 4997310902026797504
-    second: leftbrow
+      213: -8304597814010553441
+    second: fishbone
   - first:
-      213: 6697920571558693427
-    second: rightbrow
+      213: -3900921230657346955
+    second: mouse
+  - first:
+      213: 7609219290560474306
+    second: mouse2
+  - first:
+      213: -2089604451280166334
+    second: injured mitt
+  - first:
+      213: -5252230488431989338
+    second: mouse1
+  - first:
+      213: 7601757183429831235
+    second: Obstacle sheet_18
+  - first:
+      213: -7505442228448061897
+    second: cattoy
+  - first:
+      213: 8702851827389895950
+    second: toy handle
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -160,394 +178,405 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Hand
+      name: Injured hand
       rect:
         serializedVersion: 2
-        x: 189
-        y: 818
-        width: 325
-        height: 868
+        x: 63
+        y: 1326
+        width: 331
+        height: 627
       alignment: 9
-      pivot: {x: 0.66899234, y: 0.0042160666}
+      pivot: {x: 0.7320838, y: 0.9220115}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c73452f410c97eff0800000000000000
-      internalID: -6865344981023876
+      spriteID: 0dfc5b1309dfa6b60800000000000000
+      internalID: 7740277705340735440
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Blank face
+      name: Normal hand
       rect:
         serializedVersion: 2
-        x: 980
-        y: 1534
-        width: 761
-        height: 487
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7569e0ac69d58ea00800000000000000
-      internalID: 785981037192582743
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Eye_socket
-      rect:
-        serializedVersion: 2
-        x: 718
-        y: 938
-        width: 187
-        height: 78
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2982cc652d24387a0800000000000000
-      internalID: -6376179176259704686
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: nugget_3
-      rect:
-        serializedVersion: 2
-        x: 914
-        y: 1004
-        width: 760
-        height: 487
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -327, y: -195.5}
-        - {x: -380, y: -135.5}
-        - {x: -380, y: 5.5}
-        - {x: -287, y: 121.5}
-        - {x: -192, y: 238.5}
-        - {x: -140, y: 229.5}
-        - {x: -94, y: 152.5}
-        - {x: 168, y: 156.5}
-        - {x: 240, y: 243.5}
-        - {x: 297, y: 243.5}
-        - {x: 380, y: 57.5}
-        - {x: 380, y: -94.5}
-        - {x: 205, y: -243.5}
-        - {x: -235, y: -243.5}
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c443929c064b87250800000000000000
-      internalID: 5942698036100150348
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Eye_ball
-      rect:
-        serializedVersion: 2
-        x: 1001
-        y: 956
-        width: 32
-        height: 60
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 82f118605f01997c0800000000000000
-      internalID: -4064198544163004632
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tail_0
-      rect:
-        serializedVersion: 2
-        x: 1407
-        y: 820
-        width: 392
-        height: 222
-      alignment: 9
-      pivot: {x: 0.046982124, y: 0.17176916}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 35, y: 44}
-        - {x: -34, y: 11}
-        - {x: -126, y: -111}
-        - {x: -196, y: -111}
-        - {x: -196, y: -17}
-        - {x: -109, y: 69}
-        - {x: -7, y: 111}
-        - {x: 107, y: 111}
-        - {x: 196, y: 47}
-        - {x: 196, y: -54}
-        - {x: 141.62231, y: -54.28174}
-        - {x: 93, y: 19}
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 392026613d58cf150800000000000000
-      internalID: 5907743952863363731
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tail_1
-      rect:
-        serializedVersion: 2
-        x: 1396
-        y: 657
-        width: 450
-        height: 150
-      alignment: 9
-      pivot: {x: 0.03609158, y: 0.27277955}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a7760499f25dab3c0800000000000000
-      internalID: -4342924490234108038
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slice_0
-      rect:
-        serializedVersion: 2
-        x: 154
-        y: 482
-        width: 111
-        height: 80
-      alignment: 9
-      pivot: {x: 0.28831288, y: 0.10261917}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -7.5, y: -40}
-        - {x: -36.5, y: -40}
-        - {x: -55.5, y: -16}
-        - {x: -55.5, y: 8}
-        - {x: 0.5, y: 40}
-        - {x: 55.5, y: 40}
-        - {x: 55.5, y: 12}
-        - {x: 6.5, y: -34}
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1c30024b76b6fe5c0800000000000000
-      internalID: -4184007435656100927
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slice_1
-      rect:
-        serializedVersion: 2
-        x: 219
-        y: 352
-        width: 419
-        height: 190
-      alignment: 9
-      pivot: {x: 0.16022478, y: 0.056243416}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -125.5, y: -69}
-        - {x: -123.5, y: -95}
-        - {x: -177.5, y: -95}
-        - {x: -209.5, y: -76}
-        - {x: -209.5, y: -31}
-        - {x: -181.5, y: 2}
-        - {x: -120.5, y: 41}
-        - {x: -43.5, y: 64}
-        - {x: 80.5, y: 71}
-        - {x: 124.5, y: 63}
-        - {x: 117.5, y: 39}
-        - {x: 90.5, y: 41}
-        - {x: 6.5, y: 18}
-        - {x: -66.5, y: -17}
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d47d6c37bb649bc90800000000000000
-      internalID: -7153608762186082483
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: butt
-      rect:
-        serializedVersion: 2
-        x: 1005
-        y: 251
-        width: 544
-        height: 322
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -51, y: -136}
-        - {x: -132, y: -140}
-        - {x: -200, y: -132}
-        - {x: -249, y: -100}
-        - {x: -272, y: -52}
-        - {x: -272, y: 65}
-        - {x: -164, y: 141}
-        - {x: -53, y: 161}
-        - {x: 50, y: 161}
-        - {x: 161, y: 123}
-        - {x: 202, y: 95}
-        - {x: 248, y: 28}
-        - {x: 272, y: -60}
-        - {x: 272, y: -94}
-        - {x: 200, y: -121}
-        - {x: 110, y: -131}
-        - {x: 89, y: -155}
-        - {x: 40, y: -161}
-        - {x: -42, y: -161}
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 42c21407f267d9950800000000000000
-      internalID: 6457447386838019108
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tail_2
-      rect:
-        serializedVersion: 2
-        x: 1422
-        y: 518
-        width: 464
-        height: 94
-      alignment: 9
-      pivot: {x: 0.11422861, y: 0.40478775}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -218, y: -30}
-        - {x: -232, y: -15}
-        - {x: -232, y: 33}
-        - {x: -175, y: 47}
-        - {x: 139, y: 47}
-        - {x: 222, y: 31}
-        - {x: 232, y: 10}
-        - {x: 232, y: -35}
-        - {x: -1, y: -47}
-        - {x: -137, y: -46}
-        - {x: -188, y: -47}
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 57b7ef48249677db0800000000000000
-      internalID: -4794247543892575371
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slice_2
-      rect:
-        serializedVersion: 2
-        x: 521
-        y: 343
-        width: 93
-        height: 42
-      alignment: 9
-      pivot: {x: -2.1009, y: -2.5605686}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5e7af0de00ec7b9e0800000000000000
-      internalID: -1605588238761744411
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tAIL_3
-      rect:
-        serializedVersion: 2
-        x: 1565
-        y: 148
+        x: 459
+        y: 1278
         width: 304
-        height: 295
+        height: 675
       alignment: 9
-      pivot: {x: 0.032628108, y: 0.15465099}
+      pivot: {x: 0.64974576, y: 0.9467976}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ecc4859c967a1fbd0800000000000000
-      internalID: -2598111437224653618
+      spriteID: 08d925b2f1ce63ab0800000000000000
+      internalID: -5028572315297604224
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: leftbrow
+      name: forearm
       rect:
         serializedVersion: 2
-        x: 515
-        y: 1369
-        width: 134
-        height: 65
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 817
+        y: 1461
+        width: 282
+        height: 541
+      alignment: 9
+      pivot: {x: 0.70178527, y: 0.9312462}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0c18e7bd9c30a5540800000000000000
-      internalID: 4997310902026797504
+      spriteID: 04de0c60ffee4bd80800000000000000
+      internalID: -8235695039456416448
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rightbrow
+      name: lilfinger
       rect:
         serializedVersion: 2
-        x: 892
-        y: 1390
-        width: 133
-        height: 72
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 1189
+        y: 1787
+        width: 93
+        height: 163
+      alignment: 9
+      pivot: {x: 0.4694063, y: 0.83164555}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10.5, y: -65.5}
+        - {x: -38.5, y: -12.5}
+        - {x: -46.5, y: 21.5}
+        - {x: -46.5, y: 61.5}
+        - {x: -28.5, y: 81.5}
+        - {x: 3.5, y: 81.5}
+        - {x: 32.5, y: 52.5}
+        - {x: 31.5, y: -11.5}
+        - {x: 46.5, y: -39.5}
+        - {x: 46.5, y: -60.5}
+        - {x: 35.5, y: -81.5}
+        - {x: 10.5, y: -81.5}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a0130ce635898660800000000000000
+      internalID: 7388583134612361385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ring finger
+      rect:
+        serializedVersion: 2
+        x: 1277
+        y: 1775
+        width: 80
+        height: 151
+      alignment: 9
+      pivot: {x: 0.45865172, y: 0.843193}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 40, y: -51.5}
+        - {x: 40, y: -75.5}
+        - {x: 10, y: -75.5}
+        - {x: -28, y: -62.5}
+        - {x: -34, y: -23.5}
+        - {x: -40, y: 7.5}
+        - {x: -40, y: 51.5}
+        - {x: -20, y: 75.5}
+        - {x: 14, y: 75.5}
+        - {x: 33, y: 45.5}
+        - {x: 33, y: 13.5}
+        - {x: 29, y: 2.5}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbd283938ced500b0800000000000000
+      internalID: -5762955196615873089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: middlefinger
+      rect:
+        serializedVersion: 2
+        x: 1359
+        y: 1755
+        width: 97
+        height: 147
+      alignment: 9
+      pivot: {x: 0.3863299, y: 0.86003184}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 48.5, y: -52.5}
+        - {x: 48.5, y: -73.5}
+        - {x: 9.5, y: -73.5}
+        - {x: -35.5, y: -62.5}
+        - {x: -48.5, y: -1.5}
+        - {x: -48.5, y: 57.5}
+        - {x: -31.5, y: 73.5}
+        - {x: 3.5, y: 73.5}
+        - {x: 23.5, y: 51.5}
+        - {x: 24.5, y: 26.5}
+        - {x: 34.5, y: -35.5}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee38f137160fe4bd0800000000000000
+      internalID: -2643911629885963282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: indexfinger
+      rect:
+        serializedVersion: 2
+        x: 1443
+        y: 1770
+        width: 102
+        height: 211
+      alignment: 9
+      pivot: {x: 0.37028235, y: 0.8501144}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 51, y: -105.5}
+        - {x: -23, y: -105.5}
+        - {x: -40, y: -72.5}
+        - {x: -51, y: -15.5}
+        - {x: -51, y: 74.5}
+        - {x: -28, y: 105.5}
+        - {x: 6, y: 105.5}
+        - {x: 27, y: 80.5}
+        - {x: 30, y: 51.5}
+        - {x: 17, y: 31.5}
+        - {x: 27, y: -20.5}
+        - {x: 51, y: -57.5}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58871f2a4136d37f0800000000000000
+      internalID: -631239432477771643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mitts
+      rect:
+        serializedVersion: 2
+        x: 1244
+        y: 1253
+        width: 331
+        height: 483
+      alignment: 9
+      pivot: {x: 0.50855374, y: 0.83414185}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 33a8981d54bc3fc50800000000000000
-      internalID: 6697920571558693427
+      spriteID: 8fb6e0bdcd3f44e90800000000000000
+      internalID: -7042235787407102984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thumb
+      rect:
+        serializedVersion: 2
+        x: 1106
+        y: 1386
+        width: 86
+        height: 154
+      alignment: 9
+      pivot: {x: 0.26841417, y: 0.70322645}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35f84733e012db450800000000000000
+      internalID: 6106073014660796243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fishfull
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 863
+        width: 160
+        height: 334
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39e3b1cc150885a80800000000000000
+      internalID: -8477885209719914861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fishbone
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 788
+        width: 196
+        height: 425
+      alignment: 9
+      pivot: {x: 0.4422159, y: 0.4400405}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9b5a6da94420cc80800000000000000
+      internalID: -8304597814010553441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mouse
+      rect:
+        serializedVersion: 2
+        x: 537
+        y: 849
+        width: 152
+        height: 351
+      alignment: 9
+      pivot: {x: 0.6676491, y: 0.39513272}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 572a3e50fc42dd9c0800000000000000
+      internalID: -3900921230657346955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mouse2
+      rect:
+        serializedVersion: 2
+        x: 797
+        y: 995
+        width: 174
+        height: 284
+      alignment: 9
+      pivot: {x: 0.45118204, y: 0.34048334}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cc28ef11a0699960800000000000000
+      internalID: 7609219290560474306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: injured mitt
+      rect:
+        serializedVersion: 2
+        x: 1260
+        y: 835
+        width: 335
+        height: 399
+      alignment: 9
+      pivot: {x: 0.5338073, y: 0.8973912}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 242ee50a2db3003e0800000000000000
+      internalID: -2089604451280166334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mouse1
+      rect:
+        serializedVersion: 2
+        x: 769
+        y: 685
+        width: 151
+        height: 226
+      alignment: 9
+      pivot: {x: 0.65000826, y: 0.48747158}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ade882c2345c17b0800000000000000
+      internalID: -5252230488431989338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cattoy
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 364
+        width: 191
+        height: 374
+      alignment: 9
+      pivot: {x: 0.5296483, y: 0.32587552}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 736132b0f0057d790800000000000000
+      internalID: -7505442228448061897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: toy handle
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 340
+        width: 61
+        height: 362
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e051f6890adb6c870800000000000000
+      internalID: 8702851827389895950
       vertices: []
       indices: 
       edges: []
