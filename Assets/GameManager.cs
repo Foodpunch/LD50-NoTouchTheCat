@@ -1,21 +1,24 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using NaughtyAttributes;
 
 public class GameManager : MonoBehaviour
 {
     public GameObject HandPrefab;
-    public Transform[] SpawnPoints;
+    public GameObject[] itemPrefabs;
+    public Transform[] HandSpawnPoints;
+    //public Transform[] MouseSpawnPoints;
+
 
     public static GameManager Instance;
-    public List<GameObject> SpawnedObjects = new List<GameObject>();
 
 
-    float gameTime;
-    float itemSpawnRate = 0.5f;
-    float nextTimeToSpawn;
+    float handSpawnRate = 0.5f;
+    float nextTimeToSpawnHands;
 
-
+    float mouseSpawnRate = 0.25f;
+    float nextTimeToSpawnMouse;
 
     private void Awake()
     {
@@ -30,28 +33,38 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        gameTime += Time.deltaTime;
-        if (Time.time > nextTimeToSpawn)
+        if (Time.time > nextTimeToSpawnHands)
         {
-            SpawnItem();
-            nextTimeToSpawn = Time.time + (1 / itemSpawnRate);
+            SpawnHands();
+            nextTimeToSpawnHands = Time.time + (1 / handSpawnRate);
+        }
+        if(Time.time > nextTimeToSpawnMouse)
+        {
+            SpawnMouse();
+            nextTimeToSpawnMouse = Time.time + (1 / Random.Range(0.1f,0.25f));
         }
     }
 
-    void SpawnItem()
+    void SpawnHands()
     {
         GameObject ItemClone = Instantiate(HandPrefab,GetRandomSpawnPoint().position,HandPrefab.transform.rotation);
-        SpawnedObjects.Add(ItemClone);
         if(PercentChance(10))
         {
             ItemClone.GetComponent<HumanHand>().SetMitten();
             ItemClone.name = "Mitts";
         }
     }
+    [Button]
+    public void SpawnMouse()
+    {
+        GameObject ItemClone = Instantiate(itemPrefabs[Random.Range(0,itemPrefabs.Length)], GetRandomSpawnPoint().position, Quaternion.identity);
+        Vector2 forceDir = CatController.Instance.transform.position - ItemClone.transform.position;
+        ItemClone.GetComponent<Rigidbody2D>().AddForce(forceDir.normalized * 10f,ForceMode2D.Impulse);
+    }
 
     Transform GetRandomSpawnPoint()
     {
-        return SpawnPoints[Random.Range(0, SpawnPoints.Length)];
+        return HandSpawnPoints[Random.Range(0, HandSpawnPoints.Length)];
     }
 
     bool PercentChance(int chance)

@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1255500433483485011}
   - component: {fileID: 1255500433483485010}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Ring
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -92,7 +92,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1255500433752574943}
   - component: {fileID: 1255500433752574942}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Index
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -175,7 +175,7 @@ GameObject:
   - component: {fileID: 1255500434112134407}
   - component: {fileID: 1255500434112134405}
   - component: {fileID: 1255500434112134406}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: HumanHandHolder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -253,7 +253,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1255500434243425327}
   - component: {fileID: 1255500434243425326}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Lil
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -335,7 +335,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1255500434437445788}
   - component: {fileID: 1255500434437445779}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Middle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -417,7 +417,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1255500434661679165}
   - component: {fileID: 1255500434661679164}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Forearm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -500,7 +500,7 @@ GameObject:
   - component: {fileID: 1255500435054394575}
   - component: {fileID: 1255500435054394574}
   - component: {fileID: 1255500435054394573}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Hand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -583,7 +583,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1255500435178504001}
   - component: {fileID: 1255500435178504000}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Thumb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -665,7 +665,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8790244387139548118}
   - component: {fileID: 4905004593760651416}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Mitts
   m_TagString: Untagged
   m_Icon: {fileID: 0}

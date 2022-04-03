@@ -25,7 +25,7 @@ TextureImporter:
     second: indexfinger
   - first:
       213: -3960954192094337165
-    second: Obstacle sheet_7
+    second: cattoyfull
   - first:
       213: -7042235787407102984
     second: mitts
@@ -577,6 +577,27 @@ TextureImporter:
       bones: []
       spriteID: e051f6890adb6c870800000000000000
       internalID: 8702851827389895950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cattoyfull
+      rect:
+        serializedVersion: 2
+        x: 1009
+        y: 463
+        width: 215
+        height: 737
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3776f98f52dd709c0800000000000000
+      internalID: -3960954192094337165
       vertices: []
       indices: 
       edges: []

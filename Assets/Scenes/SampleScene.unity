@@ -838,7 +838,6 @@ GameObject:
   m_Component:
   - component: {fileID: 673797935}
   - component: {fileID: 673797937}
-  - component: {fileID: 673797936}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -860,27 +859,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!50 &673797936
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 673797934}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 4
 --- !u!114 &673797937
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -894,7 +872,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HandPrefab: {fileID: 1255500434112134400, guid: 17235f0e826558d4883e24a3e5c0ca1f, type: 3}
-  SpawnPoints:
+  itemPrefabs:
+  - {fileID: 6443705762188283702, guid: fa738e94ffbdd8f4c94852d5208ae44e, type: 3}
+  - {fileID: 3036565094379568180, guid: 77ba326db32f68b4582fad7f3c7ac9bd, type: 3}
+  - {fileID: 970735044521364096, guid: 09c36f88a4de55c42b4ef2d60a45389b, type: 3}
+  HandSpawnPoints:
   - {fileID: 1455834740}
   - {fileID: 216486614}
   - {fileID: 916781591}
@@ -905,7 +887,6 @@ MonoBehaviour:
   - {fileID: 647853036}
   - {fileID: 2111327540}
   - {fileID: 358981254}
-  SpawnedObjects: []
 --- !u!1 &749357572
 GameObject:
   m_ObjectHideFlags: 0
@@ -1626,7 +1607,7 @@ GameObject:
   - component: {fileID: 1412449350}
   - component: {fileID: 1412449351}
   - component: {fileID: 1412449352}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cat
   m_TagString: Player
   m_Icon: {fileID: 0}
