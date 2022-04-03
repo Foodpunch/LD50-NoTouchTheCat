@@ -27,14 +27,14 @@ public class CatHands : MonoBehaviour
     void Update()
     {
         SetDirectionToMouse();
-        if(SecondaryObject!=null)
+        if (SecondaryObject!=null)
         {
             for (int i = 0; i < SecondaryObject.Length; ++i)
             {
-                SecondaryObject[i].transform.rotation = gameObject.transform.rotation;
+                //SecondaryObject[i].transform.rotation = gameObject.transform.rotation;        //causes some weird glitches when pointing down
+                SecondaryObject[i].transform.rotation = Quaternion.Slerp(SecondaryObject[i].transform.rotation, gameObject.transform.rotation, Time.deltaTime*18f);
             }
         }
-       
     }
 
     void SetDirectionToMouse()
