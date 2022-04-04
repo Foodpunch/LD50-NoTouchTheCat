@@ -52,6 +52,8 @@ public class HumanHand : MonoBehaviour
                 Destroy(gameObject, 1f);
             }
         }
+
+        if (GameManager.Instance.isGameOver) Destroy(gameObject);
            
 
 
@@ -62,6 +64,8 @@ public class HumanHand : MonoBehaviour
         if(collision.gameObject.CompareTag("Player"))
         {
             Debug.Log("Gameover!");
+            GameManager.Instance.isGameOver = true;
+            AudioManager.Instance.PlaySoundAtLocation(AudioManager.Instance.GameOverMeow,.3f, transform.position);
         }
         if(collision.gameObject.CompareTag("Paws"))
         {
@@ -72,12 +76,15 @@ public class HumanHand : MonoBehaviour
             }
             if(!hasMitten)
             {
+                GameManager.Instance.smackCount++;
                 mittsSr.gameObject.SetActive(false);
                 isScratched = true;
                 handSr.sprite = scratchedHand;
                 DisableFingers();
                 _col.enabled = false;
                 GameManager.Instance.SpawnText(collision.GetContact(0).collider.transform.position);
+                AudioManager.Instance.PlayCachedSound(AudioManager.Instance.OuchSounds, transform.position, .2f, true);
+                AudioManager.Instance.PlayCachedSound(AudioManager.Instance.SmackSounds, transform.position, .2f, false);
             }
         }
 

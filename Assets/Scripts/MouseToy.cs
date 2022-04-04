@@ -19,7 +19,7 @@ public class MouseToy : MonoBehaviour
     void Update()
     {
         gameTime += Time.deltaTime;
-        if(gameTime >= 5f)
+        if(gameTime >= 5f || GameManager.Instance.isGameOver)
         {
             Destroy(gameObject, 1f);
         }
@@ -28,6 +28,7 @@ public class MouseToy : MonoBehaviour
     {
         if(collision.gameObject.CompareTag("Paws"))
         {
+            GameManager.Instance.smackCount++;
             _sr.enabled = false;
             Explode();
         //    StartCoroutine(SlowTime());
@@ -47,6 +48,8 @@ public class MouseToy : MonoBehaviour
             }
         }
         GameManager.Instance.SpawnText(transform.position);
+        AudioManager.Instance.PlayCachedSound(AudioManager.Instance.SmackSounds, transform.position, .2f, false);
+        
     }
     IEnumerator SlowTime()
     {

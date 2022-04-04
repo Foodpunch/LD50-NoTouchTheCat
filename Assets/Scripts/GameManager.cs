@@ -1,7 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using NaughtyAttributes;
+using TMPro;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -14,12 +17,21 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance;
 
 
-    float handSpawnRate = 0.5f;
-    float nextTimeToSpawnHands;
+    float handSpawnRate = 0.25f;
+    float nextTimeToSpawnHands =5f;
 
     float mouseSpawnRate = 0.25f;
-    float nextTimeToSpawnMouse;
+    float nextTimeToSpawnMouse =5f;
 
+    public CanvasGroup FadeToWhite;
+    [SerializeField]
+    Image EndImage;
+    public bool isGameOver;
+
+    public TextMeshProUGUI SmackCounter;
+    public TextMeshProUGUI ScoreCounter;
+    public int smackCount = 0;
+    public GameObject MenuButton;
     private void Awake()
     {
         Instance = this;
@@ -33,16 +45,40 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Time.time > nextTimeToSpawnHands)
+        if(!isGameOver)
         {
-            SpawnHands();
-            nextTimeToSpawnHands = Time.time + (1 / handSpawnRate);
+            if (Time.time > nextTimeToSpawnHands)
+            {
+                SpawnHands();
+                nextTimeToSpawnHands = Time.time + (1 / handSpawnRate);
+                if (PercentChance(25))
+                {
+                    AudioManager.Instance.PlayCachedSound(AudioManager.Instance.CatSounds, transform.position, .2f, false);
+                }
+            }
+            if (Time.time > nextTimeToSpawnMouse)
+            {
+                SpawnMouse();
+                nextTimeToSpawnMouse = Time.time + (1 / Random.Range(0.1f, 0.25f));
+
+            }
+            SmackCounter.SetText("SMACK COUNT : " + smackCount.ToString());
         }
-        if(Time.time > nextTimeToSpawnMouse)
+        if(isGameOver)
         {
-            SpawnMouse();
-            nextTimeToSpawnMouse = Time.time + (1 / Random.Range(0.1f,0.25f));
+            ScoreCounter.SetText("SCORE\n" + smackCount.ToString());
+            
+            SmackCounter.gameObject.SetActive(false);
+            FadeToWhite.alpha += Time.deltaTime/4.5f;
+            if(FadeToWhite.alpha >=1)
+            {
+                EndImage.gameObject.SetActive(true);
+                ScoreCounter.gameObject.SetActive(true);
+                MenuButton.SetActive(true);
+            }
         }
+    
+       
     }
 
     void SpawnHands()
@@ -52,6 +88,10 @@ public class GameManager : MonoBehaviour
         {
             ItemClone.GetComponent<HumanHand>().SetMitten();
             ItemClone.name = "Mitts";
+        }
+        if(PercentChance(20))
+        {
+            handSpawnRate += 0.05f;
         }
     }
     [Button]
@@ -83,5 +123,17 @@ public class GameManager : MonoBehaviour
         GameObject textClone = Instantiate(SpeechBubbles[Random.Range(0, SpeechBubbles.Length)], pos, Quaternion.identity);
         textClone.transform.rotation = Quaternion.Euler(randAngle);
         Destroy(textClone, 0.5f);
+    }
+    public void BackToMenu()
+    {
+        StartCoroutine(LoadSceneAsync());        
+    }
+    IEnumerator LoadSceneAsync()
+    {
+        AsyncOperation Menu = SceneManager.LoadSceneAsync(0);
+        while (!Menu.isDone)
+        {
+            yield return null;
+        }
     }
 }

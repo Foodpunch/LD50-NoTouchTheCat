@@ -30,7 +30,7 @@ public class CatController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetButton("Fire1"))
+        if(Input.GetButton("Fire1") && !GameManager.Instance.isGameOver)
         {
             catTime += Time.deltaTime;
             if (Time.time >= nextTimeToSwipe)
@@ -49,7 +49,8 @@ public class CatController : MonoBehaviour
             {
                 CatHands[i].SetTrigger("Swipe");
             }
-           // Instantiate(SwipeEffect, RightHand.position, RightHand.rotation);
+            AudioManager.Instance.PlayCachedSound(AudioManager.Instance.SwipeSounds, transform.position, .3f,true);
+            // Instantiate(SwipeEffect, RightHand.position, RightHand.rotation);
             //Instantiate(SwipeEffect, LeftHand.position, LeftHand.rotation);
         }
         

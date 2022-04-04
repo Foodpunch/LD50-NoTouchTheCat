@@ -8,6 +8,7 @@ public class CatHands : MonoBehaviour
     Vector3 mouseDir;
 
     public GameObject[] SecondaryObject;
+    public float lookDelay;
     public enum TRANSFORM
     {
         UP,
@@ -26,15 +27,19 @@ public class CatHands : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        SetDirectionToMouse();
-        if (SecondaryObject!=null)
+        if(!GameManager.Instance.isGameOver)
         {
-            for (int i = 0; i < SecondaryObject.Length; ++i)
+            SetDirectionToMouse();
+            if (SecondaryObject != null)
             {
-                //SecondaryObject[i].transform.rotation = gameObject.transform.rotation;        //causes some weird glitches when pointing down
-                SecondaryObject[i].transform.rotation = Quaternion.Slerp(SecondaryObject[i].transform.rotation, gameObject.transform.rotation, Time.deltaTime*18f);
+                for (int i = 0; i < SecondaryObject.Length; ++i)
+                {
+                    //SecondaryObject[i].transform.rotation = gameObject.transform.rotation;        //causes some weird glitches when pointing down
+                    SecondaryObject[i].transform.rotation = Quaternion.Slerp(SecondaryObject[i].transform.rotation, gameObject.transform.rotation, Time.deltaTime * lookDelay);
+                }
             }
         }
+       
     }
 
     void SetDirectionToMouse()
