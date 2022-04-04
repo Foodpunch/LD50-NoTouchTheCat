@@ -61,4 +61,8 @@ public class MenuManager : MonoBehaviour
             yield return null;
         }
     }
+    public void ExitGame()
+    {
+        Application.Quit();
+    }
 }

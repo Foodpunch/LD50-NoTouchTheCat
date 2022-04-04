@@ -23,6 +23,9 @@ TextureImporter:
   - first:
       213: 6114906465936268015
     second: CatBackground_6
+  - first:
+      213: -6304182545270792179
+    second: CatBackground_7
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -286,7 +289,7 @@ TextureImporter:
         width: 191
         height: 200
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -294,6 +297,27 @@ TextureImporter:
       bones: []
       spriteID: feaded858038cd450800000000000000
       internalID: 6114906465936268015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CatBackground_7
+      rect:
+        serializedVersion: 2
+        x: 1628
+        y: 352
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d00aae5406b0388a0800000000000000
+      internalID: -6304182545270792179
       vertices: []
       indices: 
       edges: []
